@@ -5,32 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="keywords" content="BMI">
+    <meta name="description" content="BMI Calculor">
+    <meta name="author" content="Supawat">
+    <title>BMI Calculor</title>
+    <link rel="stylesheet" href="./CSS/1.css">
+    <style>
+        h2 {
+            color: rgb(55, 45, 197);
+            text-align: center;
+
+        }
+
+        p {
+            color: rgb(6, 19, 20);
+        }
+
+        #sau1 {
+            color: rgb(5, 9, 12);
+        }
+
+        #sau2 {
+            color: rgb(202, 31, 174);
+        }
+
+        button {
+            size: 50%;
+            color: rgb(6, 12, 6);
+            background-color: rgb(48, 212, 48);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>BMI Calculator</h1>
-    <hr>
-    น้ำหนักตัว(Kg.)
-    <br>
-    <input type="number" name="" id="weight">
-    <br><br>
-    ส่วนสูง(Cm.)
-    <br><br>
-    <input type="number" name="" id="height">
-    <br><br>
-    <button id="calBMI">คำนวน</button>
-    <br><br>
-    BMI
-    <br>
-    <span id="bmiValue">0</span>
-    <br><br>
-    <span id="bmiResult">การแปลผล BMI</span>
+    <div class="bodypage">
+        <div class="text">
+            <h2><b>BMI Calculator</b></h2>
+            <br>
+        </div>
+        <div class="table">
+            <div class="space">
+                <label for="weight" class="f-weight">น้ำหนักตัว (kg.)</label>
+                <br><br>
+                <input type="number" name="" id="weight" class="i-weight">
+
+                <br>
+                <br><br>
+                <label for="weight" class="f-height">ส่วนสูง (Cm.)</label>
+                <br><br>
+                <input type="number" name="" id="height" class="i-height">
+                <br><br>
+                <button id="calBMI" class="cal">คำนวณ ↓</button>
+                <br><br>
+                <div class="resultBMI">
+                    <div class="result">
+                        <p>BMI</p>
+                        <span id="bmiValue">0</span>
+                        <br><br>
+                        <span id="bmiResult">การแปลผล BMI</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="./js/script12.js"></script>
 
 
 
 
-    <script src="./js/script12.js"></script>
 </body>
 
 </html>
